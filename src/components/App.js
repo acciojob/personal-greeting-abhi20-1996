@@ -15,7 +15,7 @@ function enterdText(event){
     <div>
         <label for="name">Enter your name:</label>
         <input value={name} onChange={enterdText} type="text" id="name"/>
-        {name ? <p>Hello {name}!</p> : null}
+        <p>{name ? `Hello ${name}!` : null}</p>
     </div>
   )
 }
