@@ -14,8 +14,8 @@ function enterdText(event){
   return (
     <div>
         <label for="name">Enter your name:</label>
-        <input onChange={enterdText} type="text" id="name"/>
-        <p>{name}</p>
+        <input value={name} onChange={enterdText} type="text" id="name"/>
+        {name ? <p>Hello {name}!</p> : null}
     </div>
   )
 }
